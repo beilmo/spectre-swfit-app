@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpectreDomain
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F712C962373163000A1CFAA /* SpectreDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6F712C952373163000A1CFAA /* SpectreDomain */; };
 		6F9B8EC42364AA6800C48D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8EC32364AA6800C48D36 /* AppDelegate.swift */; };
 		6F9B8EC62364AA6800C48D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8EC52364AA6800C48D36 /* SceneDelegate.swift */; };
 		6F9B8ECF2364AA6A00C48D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B8ECE2364AA6A00C48D36 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F712C982373174E00A1CFAA /* spectre-swift-domain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "spectre-swift-domain"; path = "../spectre-swift-domain"; sourceTree = "<group>"; };
 		6F9B8EC02364AA6800C48D36 /* Spectre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9B8EC32364AA6800C48D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F9B8EC52364AA6800C48D36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F712C962373163000A1CFAA /* SpectreDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 		6F9B8EB72364AA6800C48D36 = {
 			isa = PBXGroup;
 			children = (
+				6F712C982373174E00A1CFAA /* spectre-swift-domain */,
 				6F9B8EC22364AA6800C48D36 /* Spectre */,
 				6F9B8EC12364AA6800C48D36 /* Products */,
 			);
@@ -190,6 +194,9 @@
 			dependencies = (
 			);
 			name = Spectre;
+			packageProductDependencies = (
+				6F712C952373163000A1CFAA /* SpectreDomain */,
+			);
 			productName = Spectre;
 			productReference = 6F9B8EC02364AA6800C48D36 /* Spectre.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 6F9B8EB72364AA6800C48D36;
+			packageReferences = (
+				6F712C942373163000A1CFAA /* XCRemoteSwiftPackageReference "spectre-swift-domain" */,
+			);
 			productRefGroup = 6F9B8EC12364AA6800C48D36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -452,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F712C942373163000A1CFAA /* XCRemoteSwiftPackageReference "spectre-swift-domain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/beilmo/spectre-swift-domain";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F712C952373163000A1CFAA /* SpectreDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F712C942373163000A1CFAA /* XCRemoteSwiftPackageReference "spectre-swift-domain" */;
+			productName = SpectreDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F9B8EB82364AA6800C48D36 /* Project object */;
 }
