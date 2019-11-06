@@ -8,6 +8,8 @@
 
 import UIKit
 import SpectreDomain
+import SpectrePresentation
+import SpectrePlatform
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

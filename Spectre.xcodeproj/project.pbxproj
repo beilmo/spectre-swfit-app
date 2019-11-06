@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F293C0923736D5D0007BAEA /* SpectrePlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 6F293C0823736D5D0007BAEA /* SpectrePlatform */; };
 		6F712C962373163000A1CFAA /* SpectreDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6F712C952373163000A1CFAA /* SpectreDomain */; };
 		6F9B8EC42364AA6800C48D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8EC32364AA6800C48D36 /* AppDelegate.swift */; };
 		6F9B8EC62364AA6800C48D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8EC52364AA6800C48D36 /* SceneDelegate.swift */; };
@@ -31,9 +32,11 @@
 		6F9B8F0B2364D63300C48D36 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8F0A2364D63300C48D36 /* UIImage+Additions.swift */; };
 		6F9B8F0D2364DA6500C48D36 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8F0C2364DA6500C48D36 /* EmptyViewController.swift */; };
 		6F9B8F0F2364ECD400C48D36 /* UILabel+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B8F0E2364ECD400C48D36 /* UILabel+Factory.swift */; };
+		6FDA23B2237369EA00788433 /* SpectrePresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 6FDA23B1237369EA00788433 /* SpectrePresentation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F293C0A23736D6A0007BAEA /* spectre-swift-platform */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "spectre-swift-platform"; path = "../spectre-swift-platform"; sourceTree = "<group>"; };
 		6F712C982373174E00A1CFAA /* spectre-swift-domain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "spectre-swift-domain"; path = "../spectre-swift-domain"; sourceTree = "<group>"; };
 		6F9B8EC02364AA6800C48D36 /* Spectre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9B8EC32364AA6800C48D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		6F9B8F0A2364D63300C48D36 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 		6F9B8F0C2364DA6500C48D36 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		6F9B8F0E2364ECD400C48D36 /* UILabel+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Factory.swift"; sourceTree = "<group>"; };
+		6FDA23B3237369F900788433 /* spectre-swift-presentation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "spectre-swift-presentation"; path = "../spectre-swift-presentation"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F293C0923736D5D0007BAEA /* SpectrePlatform in Frameworks */,
 				6F712C962373163000A1CFAA /* SpectreDomain in Frameworks */,
+				6FDA23B2237369EA00788433 /* SpectrePresentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				6F712C982373174E00A1CFAA /* spectre-swift-domain */,
+				6FDA23B3237369F900788433 /* spectre-swift-presentation */,
+				6F293C0A23736D6A0007BAEA /* spectre-swift-platform */,
 				6F9B8EC22364AA6800C48D36 /* Spectre */,
 				6F9B8EC12364AA6800C48D36 /* Products */,
 			);
@@ -196,6 +204,8 @@
 			name = Spectre;
 			packageProductDependencies = (
 				6F712C952373163000A1CFAA /* SpectreDomain */,
+				6FDA23B1237369EA00788433 /* SpectrePresentation */,
+				6F293C0823736D5D0007BAEA /* SpectrePlatform */,
 			);
 			productName = Spectre;
 			productReference = 6F9B8EC02364AA6800C48D36 /* Spectre.app */;
@@ -227,6 +237,8 @@
 			mainGroup = 6F9B8EB72364AA6800C48D36;
 			packageReferences = (
 				6F712C942373163000A1CFAA /* XCRemoteSwiftPackageReference "spectre-swift-domain" */,
+				6FDA23B0237369EA00788433 /* XCRemoteSwiftPackageReference "spectre-swift-presentation" */,
+				6F293C0723736D5D0007BAEA /* XCRemoteSwiftPackageReference "spectre-swift-platform" */,
 			);
 			productRefGroup = 6F9B8EC12364AA6800C48D36 /* Products */;
 			projectDirPath = "";
@@ -464,6 +476,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6F293C0723736D5D0007BAEA /* XCRemoteSwiftPackageReference "spectre-swift-platform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/beilmo/spectre-swift-platform";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 		6F712C942373163000A1CFAA /* XCRemoteSwiftPackageReference "spectre-swift-domain" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/beilmo/spectre-swift-domain";
@@ -472,13 +492,31 @@
 				minimumVersion = 0.0.1;
 			};
 		};
+		6FDA23B0237369EA00788433 /* XCRemoteSwiftPackageReference "spectre-swift-presentation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/beilmo/spectre-swift-presentation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6F293C0823736D5D0007BAEA /* SpectrePlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F293C0723736D5D0007BAEA /* XCRemoteSwiftPackageReference "spectre-swift-platform" */;
+			productName = SpectrePlatform;
+		};
 		6F712C952373163000A1CFAA /* SpectreDomain */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6F712C942373163000A1CFAA /* XCRemoteSwiftPackageReference "spectre-swift-domain" */;
 			productName = SpectreDomain;
+		};
+		6FDA23B1237369EA00788433 /* SpectrePresentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FDA23B0237369EA00788433 /* XCRemoteSwiftPackageReference "spectre-swift-presentation" */;
+			productName = SpectrePresentation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
